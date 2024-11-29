@@ -1,0 +1,137 @@
+{
+  "apprenants" : [
+
+    {
+      "id": 1,
+      "nom": "Le Dérout",
+      "prenom": "Mélissa",
+      "ville": "Lorient",
+      "avatar": "avatarMelissa.png",
+      "anecdotes": "J'ai fait des études d'informatiques, je me suis tournée vers le secteur social et je me reconvertie professionnellement dans le développement informatique.",
+      "coordonnees": {
+        "latitude": "47.7484596",
+        "longitude": "-3.3659092"
+      }
+    },
+    {
+      "id" : 2,
+      "nom" : "Bocaux",
+      "prenom" : "Mélanie",
+      "ville": "Avignon",
+      "avatar" : "avatar.png",
+      "anecdotes" : "Adjoint Administratif depuis 2018, j'ai obtenu le DAEU option Littéraire en 2021 et j'ai décidé d'entreprendre une reconversion professionnelle dans le développement informatique.",
+      "coordonnees": {
+        "latitude" : "43.93538",
+        "longitude" : "4.90610"
+      }
+    },
+    {
+      "id" : 3,
+      "nom" : "Rosfield",
+      "prenom" : "Clive",
+      "ville": "Rosalia",
+      "avatar" : "avatar.png",
+      "anecdotes" : "A reçu la bénédiction de Phénix et est le gardien de son petit frère Joshua. Il le perd de vu lors de l'attaque au Fort Phoenix. Il se retrouve pris au piège dans le corps d'une entité de feu inconnu qui l'oblige à se battre contre Phoenix. Il apprendra plus tard qu'il est finalement l'émissaire d'Ifrit et qu'il peut absorber les pouvoirs des autres primordiaux.",
+      "coordonnees": {
+        "latitude" : "45.564",
+        "longitude" : "5.849"
+      }
+    },
+    {
+      "id" : 4,
+      "nom" : "Rosfield",
+      "prenom" : "Joshua",
+      "ville": "Rosalia",
+      "avatar" : "avatar.png",
+      "anecdotes" : "Il est le petit frère de Clive et est l'émissaire de Phoenix. Il perd Clive de vu lorsqu'il est enfant, que Fort Phoenix se fait attaquer et qu'il se bat contre une autre entité de feu inconnu.",
+      "coordonnees": {
+        "latitude" : "45.564",
+        "longitude" : "5.848"
+      }
+    },
+    {
+      "id" : 5,
+      "nom" : "Warrick",
+      "prenom" : "Jill",
+      "ville": "Rosalia",
+      "avatar" : "avatar.png",
+      "anecdotes" : "Est une amie d'enfance des Rosfield et est l'émissaire de Shiva. Il se bat aux côtés de Clive lorsqu'il la libère de l'empire.",
+      "coordonnees": {
+        "latitude" : "45.564",
+        "longitude" : "5.845"
+      }
+    },
+    {
+      "id" : 6,
+      "nom" : "-",
+      "prenom" : "Talgor/Torgal",
+      "ville": "Rosalia",
+      "avatar" : "avatar.png",
+      "anecdotes" : "C'est le chien de la famille Rosfield. Il s'vère que se battre aux côtés de Clive et Jill a fait ressortir sa véritable nature, qui n'est autre que Fenrir, le loup de glace qui accompagne Shiva.",
+      "coordonnees": {
+        "latitude" : "45.564",
+        "longitude" : "5.849"
+      }
+    },
+    {
+      "id" : 7,
+      "nom" : "Telamon",
+      "prenom" : "Cidolfus",
+      "ville": "Repaire",
+      "avatar" : "avatar.png",
+      "anecdotes" : "Clive le rencontre lorsqu'il est à la recherche de Joshua. Il est l'émissaire de Ramuh et est le leader du repaire qu'il a créé pour libérer les pourvoyeurs et les esclaves des différentes régions de Valisthéa.",
+      "coordonnees": {
+        "latitude" : "45",
+        "longitude" : "-1"
+      }
+    },
+    {
+      "id" : 8,
+      "nom" : "Telamon",
+      "prenom" : "Midadol",
+      "ville": "Repaire",
+      "avatar" : "avatar.png",
+      "anecdotes" : "C'est la fille adoptive de Cidolphus. Après sa mort, elle a décidé d'arrêter ses études et de mettre ses talents d'ingénieure au profit du Repaire pour faciliter le quotidien des survivants.",
+      "coordonnees": {
+        "latitude" : "45.2",
+        "longitude" : "-1.2"
+      }
+    },
+    {
+      "id" : 9,
+      "nom" : "Harman",
+      "prenom" : "Benedikta",
+      "ville": "Valoed",
+      "avatar" : "avatar.png",
+      "anecdotes" : "C'est l'émissaire de Garuda. Elle a été sauvé de l'esclavagisme par Cid mais a fini par être recueillit par le roi Barnabas. Elle s'est retrouvé au milieu d'un carré amoureux avec Cid, Barnabas et Hugo. Elle finit par se faire tuer par Clive, qui lui vole son pouvoir (sans savoir comment), ce qui lui fait perdre totalement le contrôle jusqu'à absorber une trop grosse quantité d'Ether, qui la fait devenir Garuda Déchaînée. Clive finira par la tuer lorsqu'il se transforme en Ifrit pour la 1ère fois depuis Joshua.",
+      "coordonnees": {
+        "latitude" : "40.421",
+        "longitude" : "-3.964"
+      }
+    },
+    {
+      "id" : 10,
+      "nom" : "Kupka",
+      "prenom" : "Hugo",
+      "ville": "Dalméquie",
+      "avatar" : "avatar.png",
+      "anecdotes" : "Il est l'émissaire de Titan et est amoureux de Bénédikta. Il perd la raison lorsqu'il apprend que \"Cid\" a tué sa bien-aimé et qu'il lui a livré sa tête. Il devient fou de rage et est prêt à tout pour se venger. Clive, qui a prit le nom de Cid après sa mort, le vainc et récupère son pouvoir.",
+      "coordonnees": {
+        "latitude" : "43.7118",
+        "longitude" : "11.2586"
+      }
+    },
+    {
+      "id" : 11,
+      "nom" : "Lesage",
+      "prenom" : "Dion",
+      "ville": "Sambrèque",
+      "avatar" : "avatar.png",
+      "anecdotes" : "C'est le leader du Saint-Ordre des Chevaliers Dragons et émissaire de Bahamut. Il entretient une relation amoureuse avec son commandant en second, Térence, et après les multiples manigances de sa belle-même, Annabella Rosfield qui n'est autre que la mère de Clive et Joshua. La guerre contre Valoed se trouvant bientôt aux portes du château, Dion décide de se rebeller face à sa belle-mère et en tentant de tuer son demi-frère Oliver, il tue son père qui s'interpose entre-eux. Oliver se révèlera être Ultima, à la recherche de Mythos (Clive) et poussera Dion à se transformer en Bahamut pour détruire son peuple. Clive et Joshua le ramèneront à la raison et le recueilleront au Repaire.",
+      "coordonnees": {
+        "latitude" : "51.50976",
+        "longitude" : "-0.14445"
+      }
+    }
+  ]
+}

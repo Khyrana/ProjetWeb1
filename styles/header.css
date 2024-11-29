@@ -1,0 +1,68 @@
+/* ========== PARAMETTRES GLOBAUX ========== */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: wheat;
+  color: rgb(34, 33, 33);
+}
+
+/* ========== THEME DARK/LIGHT =========== */
+
+.clair {
+  background-color: wheat;
+  color: rgb(34, 33, 33);
+}
+
+.sombre {
+  background-color: rgb(68, 58, 80);
+  color: wheat;
+}
+
+/* ========== NAVBAR =========== */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */      /* A mettre dans media queries */
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-left: 30px;
+}
+
+ul {
+  display: flex;
+}
+
+li{
+  margin-left: 30px;
+  list-style: none;
+  background-color: rgb(247, 237, 207);
+  width: 8em;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px black;
+  transition-property: transform;
+  transition-duration: 400ms;
+}
+
+li:hover {
+  transform: scale(1.05);
+}
+
+li a {
+  text-decoration: none;
+  color: rgb(34, 33, 33);
+  font-size: 1.1rem;
+  font-weight: bold;
+}

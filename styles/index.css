@@ -1,0 +1,123 @@
+/* ========== FORMULAIRE =========== */
+
+#preferences {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+#preferences label {
+  margin: 0 10px 0 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+input[type="radio"] {
+  cursor: pointer;
+}
+
+/* ========== CARTES - BOOTSTRAP =========== */
+
+h2 {
+  text-align: left;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#sectionListe{
+  width: 500px;
+  height: 200px;
+  overflow-y: scroll;
+  scrollbar-color: rgb(143, 135, 111) rgb(247, 237, 207);
+}
+
+table tr th {
+  border-top: 1px solid black;
+}
+
+table tr th,
+table tr td {
+  border-bottom: 1px solid black;
+  padding: 3px;
+}
+
+th,
+td {
+  text-align: left;
+  width: 110px;
+}
+
+.btn {
+  text-decoration: none;
+}
+
+.btn:hover {
+  text-decoration: underline;
+}
+
+/* ========== CARTES - BOOTSTRAP =========== */
+
+#sectionCarte {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.card-img-top{
+  width: 50px;
+  /*border-radius: 50%;       Modification du fond blanc des avatars donc pas de bord rond */
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 110px;
+  height: 180px;
+  padding: 15px;
+  text-align: center;
+  margin: 10px;
+}
+
+.card-body {
+ font-size: 1.2rem;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ align-items: center;
+}
+
+.card-body a {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn-primary {
+  text-decoration: none;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 5px 8px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+@media screen and (min-width: 465px) and (max-width: 1030px){
+  header {
+    display: block;
+    align-items: left;
+  }
+
+  header h1,
+  li {
+    margin: 10px 10px 10px 0;
+  }
+
+  #preferences {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,120 @@
+/* ========== TITRE ==========*/
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  margin-top: 60px;
+}
+
+/* ========== MAP ==========*/
+#map { 
+  height: 500px;
+  width: 1000px;
+  border: 3px, solid, black;
+  margin: 40px auto;
+}
+
+
+/* ========== BOUTON RETOUR ACCUEIL ========== */
+
+#retour {
+  margin-top: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  transition-property: transform;
+  transition-duration: 400ms;
+}
+
+#retour:hover{
+  transform: scale(1.05);
+}
+
+.bouton-style {
+  margin-left: 30px;
+  text-decoration: none;
+  background-color: rgb(247, 237, 207);
+  color: rgb(34, 33, 33);
+  width: 8em;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px black;
+  transition-property: transform;
+  transition-duration: 400ms;
+  cursor: pointer;
+}
+
+.boutons a {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* ========== MEDIA QUERIES ========== */
+
+@media screen and (min-width: 465px) and (max-width: 949px) {
+
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  header h1,
+  li {
+    margin: 10px 10px 10px 0;
+  }
+
+  ul {
+    justify-content: center;
+  }
+
+  #map { 
+    height: 300px;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1040px){
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  header h1,
+  li {
+    margin: 10px 10px 10px 0;
+  }
+
+  ul {
+    justify-content: center;
+  }
+
+  #map { 
+    height: 370px;
+    width: 650px;
+  }
+}
+
+@media screen and (min-width: 1041px) and (max-width: 1500px){
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  header h1,
+  li {
+    margin: 10px 10px 10px 0;
+  }
+
+  ul {
+    justify-content: center;
+  }
+
+  #map { 
+    height: 400px;
+    width: 850px;
+  }
+}

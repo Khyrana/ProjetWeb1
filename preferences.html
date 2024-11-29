@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/preferences.css">
+  <title>Promo-eni</title>
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="logo ENI Ecole">
+    <h1>PROMO 2024 D2WM & CDA</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="preferences.html">Préférences</a></li>
+        <li><a href="carte.html">Carte</a></li>
+        <li><a href="informations.html">Informations</a></li>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="parametres">
+    <h2>Préférences du site</h2>
+    <div id="theme">
+      <label for="selection">Thème du site</label>
+      <select name="selection" id="selection">
+        <option value="clair" id="clair" selected>Clair</option>
+        <option value="sombre" id="sombre">Sombre</option>
+      </select>
+    </div>
+
+    <form id="preferences">
+      <label for="">Format d'affichage de la liste des apprenants</label>
+      <div id="format">
+        <div class="groupe-input">
+          <input type="radio" name="affichage" value="liste" id="liste" checked>
+          <label for="liste">Liste</label>
+        </div>
+        <div class="groupe-input">
+          <input type="radio" name="affichage" value="carte" id="carte">
+          <label for="carte">Carte</label>
+        </div>
+      </div>
+    </form>
+
+    <section id="groupe-boutons">
+      <div class="boutons">
+        <a href="index.html" class="boutons-style">Retour à la page d'Accueil</a>
+      </div>
+      <div class="boutons">
+        <button type="button" id="save" class="boutons-style">Enregistrer</button>
+      </div>
+    </section>
+
+  </section>
+
+  <script src="scripts/preferences.js"></script>
+</body>
+</html>
