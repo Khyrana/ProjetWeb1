@@ -50,7 +50,7 @@ function afficherData(data){
 
   // Modification de l'image du pin
   const customIcon = L.icon({
-    iconUrl: '../images/marker.gif',
+    iconUrl: '../images/pin.png',
     iconSize: [40, 40],
   });
 
