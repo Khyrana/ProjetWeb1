@@ -50,7 +50,7 @@ function afficherData(data){
 
   // Modification de l'image du pin
   const customIcon = L.icon({
-    iconUrl: '../images/pin.png',
+    iconUrl: 'https://khyrana.github.io/ProjetWeb1/images/pin.png',
     iconSize: [40, 40],
   });
 
