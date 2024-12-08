@@ -4,19 +4,21 @@ const sectionListe = document.getElementById("sectionListe");
 const sectionCarte = document.getElementById("sectionCarte");
 const titre = document.getElementById('titreApprenant');
 const lien = document.getElementsByClassName('link');
+const classeTheme = document.body;
+const affichageStocke = localStorage.getItem('affichage');
+const themeStocke = localStorage.getItem('theme');
 
 // Lecture du fichier JSON en passant par GitHub Pages
 fetch('https://khyrana.github.io/ProjetWeb1/scripts/promo.json')
 .then(response => response.json())
 .then(data => afficherData(data));
 
-
 // Fonction pour afficher les données
 function afficherData(data){
 
   // Pour éviter que les 2 modes se chevauchent avant initialisation du localStorage, liste est par défaut.
   if (document.getElementById("liste").hasAttribute('checked')) {
-      listeClicked()
+    listeClicked()
   } else if (document.getElementById("carte").hasAttribute('checked')){
     carteClicked()
   };
@@ -102,9 +104,25 @@ function afficherData(data){
     if (event.target === modal) {
       closeModal();
     }
-  });// ===============================================================================================
+  });
   
-  // Fonction pour changer la couleur des liens du tableau et des cartes en fonction du thème choisie
+  // gestion de l'affichage liste/carte
+
+  function gestionAffichage(){
+
+    if (affichageStocke === "liste") {
+      listeClicked();
+      liste.setAttribute("checked", "checked");
+      carte.removeAttribute("checked");
+    } else if (affichageStocke === "carte") {
+      carteClicked();
+      carte.setAttribute("checked", "checked");
+      liste.removeAttribute("checked");
+    };
+  };
+  gestionAffichage();
+  
+  // Fonction pour changer les couleurs du tableau et des cartes en fonction du thème
   function paramColor(){
     const lienCard = document.getElementsByClassName('linkCard');
     const tab = document.querySelector('table');
@@ -114,18 +132,22 @@ function afficherData(data){
     const ligneNone = document.querySelectorAll('tr:first-child');
     const carte = document.querySelectorAll('div.card');
     const lien = document.getElementsByClassName('link');
-    
-    if(localStorage.getItem('theme') === "clair"){
+
+    if(!themeStocke || themeStocke === "clair") {
+      
+      classeTheme.className = "clair";
+
       for(let i = 0; i < lien.length; i++){
-        document.body.style.backgroundColor ="wheat";
-        document.body.style.color = "#3e3848";
         lien[i].style.color = "#4e4856";
-        lienCard[i].style.color = "#4e4856";
-        lienCard[i].style.backgroundColor = "#F5DEB3";
-        lienCard[i].style.border = "1px solid #b8a686"
+        if(lienCard[i]) {
+          lienCard[i].style.color = "#4e4856";
+          lienCard[i].style.backgroundColor = "#F5DEB3";
+          lienCard[i].style.border = "1px solid #b8a686";
+        }
         tab.style.backgroundColor = "rgb(247, 237, 207)";
         tab.style.color = "#4e4856";
         modalTemplate.style.backgroundColor = "rgb(247, 237, 207)";
+        modalTemplate.style.border ="2px solid #524A5E"
         // Modifie les <th> => ligne de l'en-tête pour changer la couleur en fonction de l'alternant
         entetes.forEach((entete) =>  {
           entete.style.backgroundColor = "#d6c29d";
@@ -148,15 +170,19 @@ function afficherData(data){
           element.style.border = "1px solid #b8a686";
         })
       };
+    }else if(themeStocke === "sombre"){
 
-    }else if(localStorage.getItem('theme') === "sombre"){
+      classeTheme.className = "sombre";
+
       for(let i = 0; i < lien.length; i++){
         document.body.style.backgroundColor ="rgb(94, 84, 107)";
         document.body.style.color = "wheat";
         lien[i].style.color = "wheat";
-        lienCard[i].style.color = "wheat";
-        lienCard[i].style.backgroundColor = "#5E546B";
-        lienCard[i].style.border = "1px solid #473f50";
+        if(lienCard[i]) {
+          lienCard[i].style.color = "wheat";
+          lienCard[i].style.backgroundColor = "#5E546B";
+          lienCard[i].style.border = "1px solid #473f50";
+        }
         tab.style.backgroundColor = "#524a5e";
         tab.style.color = "wheat";
         modalTemplate.style.backgroundColor = "#473F50";
@@ -185,53 +211,30 @@ function afficherData(data){
         })
       };
     };
-  }
-  paramColor()
+  };
+  paramColor();
 };
+
+// ============== PARTIE LISTE/CARTE ==============
 
   // Changer le format d'affichage en fonction de la sélection
   formulaire.addEventListener('click', format);
   function format(event){
     if(event.target.value === 'liste'){
-      listeClicked()
+      listeClicked();
     }else{
-      carteClicked()
-    }
-  }
+      carteClicked();
+    };
+  };
 
   // Affiche le tableau et cache les cartes
   function listeClicked(){
     sectionListe.style.display = "";
     sectionCarte.style.display = "none";
-  }
+  };
 
   // Affiche les cartes et cache le tableau
   function carteClicked(){
       sectionListe.style.display = "none";
       sectionCarte.style.display = "";
-  }
-
-  // Récupère les préférences pour afficher soit le tableau, soit les cartes
-  // et soit le thème clair, soit le thème sombre
-  function utiliserPref(){
-    if(localStorage.getItem('affichage') === "liste"){
-      listeClicked()
-      liste.setAttribute("checked","checked");
-      carte.removeAttribute("checked");
-    }else if(localStorage.getItem('affichage') === "carte"){
-      carteClicked()
-      carte.setAttribute("checked","checked");
-      liste.removeAttribute("checked");
-    }
-
-    const classeTheme = document.body;
-
-    if(localStorage.getItem('theme') === "clair"){
-      classeTheme.className = "clair";
-    }else if(localStorage.getItem('theme') === "sombre"){
-      classeTheme.className = "sombre";
-    }
-  }
-  utiliserPref();
-
-  
+  };
