@@ -20,5 +20,5 @@
 - [x] 2.1 Créer page Carte -> Afficher le positionnement d'un marqueur pour tous les apprenants enregistrés avec des coordonnées géographiques *(utiliser la librairie Javascript open-source **"Leaflet"**)*
 
 #### :palm_tree:  **Itération 3**
-- [ ] 3.1 Page Accueil -> Permettre de visualiser le détail de la fiche d'un apprenant sous la forme d'une modale *(voir la maquette d'écran + consignes sur PDF)*
+- [x] 3.1 Page Accueil -> Permettre de visualiser le détail de la fiche d'un apprenant sous la forme d'une modale *(voir la maquette d'écran + consignes sur PDF)*
 - [ ] 3.2 Fichier JSON -> Modifier la structure du fichier pour qu'il contienne des données supplémentaires *(voir consignes sur PDF)*

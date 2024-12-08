@@ -2,18 +2,19 @@
 h2 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 2.3rem;
-  margin-top: 60px;
+  letter-spacing: 7px;
+  font-size: 1.7em;
+  margin-bottom: 60px;
 }
 
 /* ========== MAP ==========*/
+
 #map { 
   height: 500px;
   width: 1000px;
   border: 3px, solid, black;
-  margin: 40px auto;
+  margin: 0 auto 40px auto;
 }
-
 
 /* ========== BOUTON RETOUR ACCUEIL ========== */
 
@@ -53,24 +54,10 @@ h2 {
   font-weight: bold;
   text-decoration: none;
 }
+
 /* ========== MEDIA QUERIES ========== */
 
 @media screen and (min-width: 465px) and (max-width: 949px) {
-
-  header {
-    display: block;
-    text-align: center;
-  }
-
-  header h1,
-  li {
-    margin: 10px 10px 10px 0;
-  }
-
-  ul {
-    justify-content: center;
-  }
-
   #map { 
     height: 300px;
     width: 400px;
@@ -78,20 +65,6 @@ h2 {
 }
 
 @media screen and (min-width: 820px) and (max-width: 1040px){
-  header {
-    display: block;
-    text-align: center;
-  }
-
-  header h1,
-  li {
-    margin: 10px 10px 10px 0;
-  }
-
-  ul {
-    justify-content: center;
-  }
-
   #map { 
     height: 370px;
     width: 650px;
@@ -99,20 +72,6 @@ h2 {
 }
 
 @media screen and (min-width: 1041px) and (max-width: 1500px){
-  header {
-    display: block;
-    text-align: center;
-  }
-
-  header h1,
-  li {
-    margin: 10px 10px 10px 0;
-  }
-
-  ul {
-    justify-content: center;
-  }
-
   #map { 
     height: 400px;
     width: 850px;

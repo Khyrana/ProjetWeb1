@@ -1,4 +1,6 @@
 /* ========== PARAMETTRES GLOBAUX ========== */
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,21 +8,9 @@
 
 body {
   margin: 15px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: parkinsans, Calibri, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: wheat;
   color: rgb(34, 33, 33);
-}
-
-/* ========== THEME DARK/LIGHT =========== */
-
-.clair {
-  background-color: wheat;
-  color: rgb(34, 33, 33);
-}
-
-.sombre {
-  background-color: rgb(68, 58, 80);
-  color: wheat;
 }
 
 /* ========== NAVBAR =========== */
@@ -29,8 +19,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* flex-wrap: wrap; */      /* A mettre dans media queries */
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 header h1 {
@@ -65,4 +54,56 @@ li a {
   color: rgb(34, 33, 33);
   font-size: 1.1rem;
   font-weight: bold;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+@media screen and (min-width: 465px) and (max-width: 949px) {
+
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  header h1,
+  li {
+    margin: 10px 10px 10px 0;
+  }
+
+  ul {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1040px){
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  header h1,
+  li {
+    margin: 10px 10px 10px 0;
+  }
+
+  ul {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1041px) and (max-width: 1500px){
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  header h1,
+  li {
+    margin: 10px 10px 10px 0;
+  }
+
+  ul {
+    justify-content: center;
+  }
+
 }

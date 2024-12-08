@@ -1,29 +1,17 @@
-// Récupère les préférences pour afficher soit le thème clair, soit le thème sombre
-// et changer la couleur des liens en fonctions du thème choisi
-function utiliserPref(){
+//Récupère les préférences pour afficher soit le thème clair, soit le thème sombre
+function themeColor(){
   const classeTheme = document.body;
-  const lien = document.getElementsByClassName('lien');
-  //console.log(lien);
-  
+  localStorage.getItem('theme');
   if(localStorage.getItem('theme') === "clair"){
-    classeTheme.className = "clair";
-    for(let i = 0; i < lien.length; i++){
-      lien[i].style.color = "black";
-    };
+      classeTheme.style.backgroundColor ="wheat";
+      classeTheme.style.color = "#3e3848";
+
   }else if(localStorage.getItem('theme') === "sombre"){
-    classeTheme.className = "sombre";
-    for(let i = 0; i < lien.length; i++){
-      lien[i].style.color = "wheat";
-    };
+      classeTheme.style.backgroundColor ="rgb(94, 84, 107)";
+      classeTheme.style.color = "rgb(247, 237, 207)";
   };
-};
-utiliserPref();
-
-
-// Lecture du fichier JSON en local en passant par LiveServer de VSCode
-/*fetch('/scripts/promo.json')
-  .then(response => response.json())
-  .then(data => afficherData(data));*/
+}
+themeColor();
 
   // Lecture du fichier JSON en passant par GitHub Pages
 fetch('https://khyrana.github.io/ProjetWeb1/scripts/promo.json')
@@ -32,14 +20,10 @@ fetch('https://khyrana.github.io/ProjetWeb1/scripts/promo.json')
 
 // Fonction pour afficher les données
 function afficherData(data){
-  // console.log(data);
-  // console.log(data.apprenants);
-  // console.log(data.apprenants[0]);
-  // console.log(data.apprenants[0].nom);
+
   let apprenant = data.apprenants
 
 // Intégration et utilisation du Leaflet GeoJson
-// setView = lat, long, zoom
   let map = L.map('map').setView([46.55, 2.5], 5);
 
   // Intégration des tuiles de la carte
@@ -67,7 +51,7 @@ function afficherData(data){
         <span class="popup">
           <b>${apprenant[i].prenom} ${apprenant[i].nom}</b>
         </span>`)
-      // Ajout du maker sur la carte
+      // Ajout du marker sur la carte
       .addTo(map);
     };
   }

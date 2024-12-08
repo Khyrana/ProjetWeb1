@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+* {
+  font-family: parkinsans, Calibri, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /*========== INFOS GENERALES ========== */
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 1.7em;
+  margin-bottom: 60px;
+}
+
 #infos-generales {
   text-align: center;
-  margin: 100px auto;
+  margin: 0 auto 100px auto;
 }
 
 #infos-generales h2 {
@@ -26,6 +41,7 @@
 
 .groupe-infos {
   width: 500px;
+  height: 160px;
   border: 1px solid black;
   padding: 5px;
   margin: 10px 0;
@@ -36,6 +52,10 @@
 
 .groupe-infos a {
   text-decoration: none;
+}
+
+.groupe-infos a:hover {
+  text-decoration: underline;
 }
 
 /*========== BOUTON RETOUR ACCUEIL ========== */
@@ -76,9 +96,11 @@
   font-weight: bold;
   text-decoration: none;
 }
+
 /* ========== MEDIA QUERIES ========== */
 
 @media screen and (min-width: 465px) and (max-width: 1030px){
+  
   header {
     display: block;
     align-items: left;

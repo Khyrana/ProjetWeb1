@@ -33,24 +33,34 @@
     <label for="carte">Carte</label>
   </form>
 
-  <h2>Liste des apprenants</h2>
   
+  <h2 id="titreApprenant">Liste des apprenants</h2>
   <section id="sectionListe">
-    <table>
-      <tr>
-        <th>Nom</th>
-        <th>Prénom</th>
-        <th>Ville</th>
-        <th>Détail</th>
-      </tr>
+    <table id="container">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Ville</th>
+          <th>Détail</th>
+        </tr>
+      </thead>
       <tbody id="tbody">
       </tbody>
     </table>
   </section>
 
-  <section id="sectionCarte">
-  </section>
-  <!-- <script src="scripts/promo.json"></script> -->
+  <div id="modal" class="modal">
+    <div class="modal-content" id="modal-template">
+      <!-- La modale sera générée dynamiquement -->
+    </div>
+  </div>
+
+
+    <section id="sectionCarte">
+    </section>
+
+
   <script src="scripts/index.js"></script>
 </body>
 </html>
